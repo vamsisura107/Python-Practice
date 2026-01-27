@@ -1,0 +1,13 @@
+num1=int(input("enter the 1st number"))
+num2=int(input("enter the second number"))
+for num in range(num1,num2+1):
+     order=len(str(num))
+     temp=num
+     sum=0
+     while temp>0:
+       digit=temp%10
+       sum=sum+digit**order
+       temp//=10
+     if num==sum:
+       print(num)
+    
