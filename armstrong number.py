@@ -1,11 +1,14 @@
-num=int(input("Enter a number: "))
-digits=str(num)
-num_digits=len(digits)
-total=0
-for d in digits:
-    total += int(d)**num_digits
-if total==num:
-    print("The number is an anagram.")
-else:
+num = int(input("enter the number"))
+temp = num
+sum = 0
+length = len(str(num))
 
-    print("The number is not an anagram.")
+while temp > 0:
+    digit = temp % 10
+    temp = temp // 10
+    sum = sum + (digit ** length)
+
+if sum == num:
+    print("armstrong number")
+else:
+    print("not an armstrong number")
