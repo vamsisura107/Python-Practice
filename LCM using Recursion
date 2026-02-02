@@ -1,0 +1,12 @@
+def hcf(a, b):
+    if b == 0:
+        return a
+    return hcf(b, a % b)
+
+def lcm(a, b):
+    return (a * b) // hcf(a, b)
+
+num1 = int(input("enter the number: "))
+num2 = int(input("enter the number: "))
+
+print("LCM:", lcm(num1, num2))
