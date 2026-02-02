@@ -1,0 +1,9 @@
+def hcf(a, b):
+    if b == 0:
+        return a
+    return hcf(b, a % b)
+
+num1 = int(input("enter the number: "))
+num2 = int(input("enter the number: "))
+
+print(hcf(num1, num2))
