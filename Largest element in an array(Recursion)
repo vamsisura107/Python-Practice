@@ -1,0 +1,11 @@
+def findmax(arr):
+    if len(arr)==1:
+        return arr[0]
+    else:
+        sub_max=findmax(arr[1:])
+    if arr[0]>sub_max:
+        return arr[0]
+    else:
+        return sub_max
+n=[10,20,50,40]
+print("tha max element is ",findmax(n))
