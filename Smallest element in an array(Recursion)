@@ -1,0 +1,11 @@
+def findmin(arr):
+    if len(arr)==1:
+        return arr[0]
+    else:
+        sub_min=findmin(arr[1:])
+    if arr[0]<sub_min:
+        return arr[0]
+    else:
+        return sub_min
+n=[10,20,50,40]
+print("tha min element is ",findmin(n))
