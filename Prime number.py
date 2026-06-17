@@ -1,4 +1,4 @@
-num = 1
+num = int(input("enter the number:"))
 flag = 0
 if num <= 1:
     flag = 1
