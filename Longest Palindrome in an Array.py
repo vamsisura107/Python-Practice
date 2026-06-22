@@ -1,10 +1,10 @@
-arr=list(map(int,input().split(‘,’)))
-p=[]
-for num in arr:
- if str(num)[::-1]== str(num):
-   p.append(str(num))
+arr = list(map(int, input("Enter numbers separated by a comma: ").split(",")))
+p = []
+for i in arr:
+    if str(i)[::-1] == str(i):
+        p.append(i)
 if p:
-   longest_palindrome= max(p)
-   print(longest_palindrome)
+    largest = max(p)
+    print(largest)
 else:
-   print("No Palindrome found.")
+    print("Not found")
