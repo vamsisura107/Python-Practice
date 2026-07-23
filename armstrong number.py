@@ -3,7 +3,7 @@ temp = num
 sum = 0
 length = len(str(num))
 
-while temp > 0:
+for _ in range(length):
     digit = temp % 10
     temp = temp // 10
     sum = sum + (digit ** length)
