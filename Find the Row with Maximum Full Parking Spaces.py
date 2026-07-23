@@ -15,5 +15,5 @@ for i in range(len(matrix)):
             ones_count += 1
     if ones_count > max_ones_count:
         max_ones_count = ones_count
-        best_row_index = row_index
+        best_row_index = i
 print("Row with maximum parking spaces:", best_row_index)
